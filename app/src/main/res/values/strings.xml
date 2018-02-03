@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Villa Salus App</string>
+    <string name="usernameUtente">Username</string>
+    <string name="passwordUtente">Password</string>
+    <string name="accedi">Accedi</string>
+
+</resources>
