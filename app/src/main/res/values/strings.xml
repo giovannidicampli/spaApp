@@ -1,7 +1,55 @@
 <resources>
     <string name="app_name">Villa Salus App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--OFFERTE-->
+    <string name="nome">Nome</string>
+    <string name="dataInizio">Data Inizio</string>
+    <string name="dataFine">Data Fine</string>
+    <string name="descrizione">Descrizione</string>
+    <string name="prezzo">Prezzo</string>
+
+    <!--REGISTRAZIONE/ACCESSO-->
+    <string name="nomeUtente">Nome</string>
+    <string name="cognomeUtente">Cognome</string>
     <string name="usernameUtente">Username</string>
     <string name="passwordUtente">Password</string>
     <string name="accedi">Accedi</string>
+    <string name="emailUtente">Email</string>
+    <string name="confermaPasswordUtente">Conferma Password</string>
+    <string name="registrati">Registrati</string>
+
+    <!--CONTROLLI REGISTRAZIONE-->
+    <string name="emailError">Inserisci email valida</string>
+    <string name="passwordError">Inserisci almeno 8 caratteri, 1 maiuscola, 1 minuscola e 1 giorno</string>
+    <string name="emptyError">Campo obbligatorio</string>
+    <string name="passwordsDiverseError">Password e conferma password non coincidenti</string>
+
+    <!--PROGRESS DIALOG-->
+    <string name="load">Caricamento dati...</string>
+
+    <!--FRAGMENTS E NAV-->
+    <string name="registrazione">Registrazione</string>
+    <string name="accesso">Accesso</string>
+    <string name="info">Info</string>
+    <string name="offerte">Offerte</string>
+    <string name="offerta">Offerta</string>
+
+    <!--INFO-->
+    <string name="telefono">Telefono</string>
+    <string name="fax">Fax</string>
+    <string name="email">Email</string>
+    <string name="telefonoValore">0874123456</string>
+    <string name="faxValore">0874123456</string>
+    <string name="emailValore">villasalus@info.com</string>
+
+    <!--ORARI-->
+    <string name="giorni">Giorni</string>
+    <string name="orario">Orario</string>
+    <string name="orari">Orari</string>
+    <string name="giorniValore">Dal lunedì al sabato</string>
+    <string name="orarioValore">8 / 22</string>
 
 </resources>

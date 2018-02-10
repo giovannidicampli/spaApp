@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewOfferte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="582dp">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="98dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textViewNomeOfferta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewDataInizioText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textViewDataInizio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewDataInizioText"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/textViewDataInizioText"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/textViewDataFine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewDataFineText"
+                android:layout_alignStart="@+id/textViewDataInizio"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/textViewPrezzo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewPrezzoText"
+                android:layout_alignStart="@+id/textViewDataFine"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/textViewDataInizioText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewDataFineText"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="43dp"
+                android:layout_marginStart="26dp"
+                android:text="@string/dataInizio"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textViewDataFineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewPrezzoText"
+                android:layout_alignStart="@+id/textViewDataInizioText"
+                android:layout_marginBottom="43dp"
+                android:text="@string/dataFine"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textViewPrezzoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textViewDataFineText"
+                android:layout_marginBottom="24dp"
+                android:text="@string/prezzo"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

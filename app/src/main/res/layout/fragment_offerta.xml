@@ -1,0 +1,101 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeOfferta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vanni.spaApp.fragments.OffertaFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textViewNomeOfferta"
+            android:layout_marginStart="194dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewNomeOfferta"
+            android:layout_alignStart="@+id/textViewNomeOfferta"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textViewDataInizio"
+            android:layout_alignEnd="@+id/textViewNomeOfferta" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textViewDataFine"
+            android:layout_below="@+id/textViewDataInizio"
+            android:layout_alignStart="@+id/textViewDataInizio" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textViewDescrizione"
+            android:layout_below="@+id/textViewDataFine"
+            android:layout_alignStart="@+id/textViewDataFine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPrezzo"
+            android:layout_below="@+id/textViewDescrizione"
+            android:layout_alignStart="@+id/textViewDescrizione"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/textViewNomeOffertaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewNomeOfferta"
+            android:layout_alignBottom="@+id/textViewNomeOfferta"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp"
+            android:text="@string/nome" />
+
+        <TextView
+            android:id="@+id/textViewDataInizioText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewDataInizio"
+            android:layout_alignBottom="@+id/textViewDataInizio"
+            android:layout_alignStart="@+id/textViewNomeOffertaText"
+            android:text="@string/dataInizio" />
+
+        <TextView
+            android:id="@+id/textViewDataFineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewDataFine"
+            android:layout_alignBottom="@+id/textViewDataFine"
+            android:layout_alignStart="@+id/textViewDataInizioText"
+            android:text="@string/dataFine" />
+
+        <TextView
+            android:id="@+id/textViewDescrizioneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewDescrizione"
+            android:layout_alignBottom="@+id/textViewDescrizione"
+            android:layout_alignStart="@+id/textViewDataFineText"
+            android:text="@string/descrizione" />
+
+        <TextView
+            android:id="@+id/textViewPrezzoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewPrezzo"
+            android:layout_alignStart="@+id/textViewDescrizioneText"
+            android:text="@string/prezzo" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

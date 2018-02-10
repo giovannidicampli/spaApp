@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vanni.spaApp.fragments.InfoFragment">
+
+    <TextView
+        android:id="@+id/textViewTelefonoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/telefono"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textViewFaxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewTelefonoText"
+        android:layout_alignStart="@+id/textViewTelefonoText"
+        android:layout_below="@+id/textViewTelefonoText"
+        android:layout_marginTop="32dp"
+        android:text="@string/fax"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textViewEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewFaxText"
+        android:layout_alignStart="@+id/textViewFaxText"
+        android:layout_below="@+id/textViewFaxText"
+        android:layout_marginTop="30dp"
+        android:text="@string/email"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewTelefonoText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="96dp"
+        android:text="@string/telefonoValore" />
+
+    <TextView
+        android:id="@+id/textViewFax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewEmailText"
+        android:layout_alignStart="@+id/textViewTelefono"
+        android:text="@string/faxValore"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewEmailText"
+        android:layout_alignStart="@+id/textViewFax"
+        android:text="@string/emailValore" />
+
+</RelativeLayout>
