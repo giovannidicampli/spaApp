@@ -15,6 +15,12 @@ public class OrariFragment extends Fragment {
     TextView textViewGiorno, textViewOra;
     String giorno, ora;
 
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_orari, container, false);
+    }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -26,13 +32,5 @@ public class OrariFragment extends Fragment {
 
         giorno = textViewGiorno.getText().toString();
         ora = textViewOra.getText().toString();
-
-
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_orari, container, false);
     }
 }

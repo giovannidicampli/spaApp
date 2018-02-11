@@ -22,9 +22,7 @@ public class ResultOfferte {
         return offerta;
     }
 
-    public void setOfferte(ArrayList<Offerta> offerta) {
-        this.offerta = offerta;
-    }
+    public void setOfferte(ArrayList<Offerta> offerta) { this.offerta = offerta; }
 
     public Boolean getResult() { return result; }
 

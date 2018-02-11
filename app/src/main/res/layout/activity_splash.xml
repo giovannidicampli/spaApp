@@ -10,10 +10,10 @@
         android:id="@+id/villaSalus"
         android:layout_width="292dp"
         android:layout_height="159dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="false"
-        android:layout_marginTop="148dp"
+        android:layout_marginBottom="211dp"
         app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteY="149dp" />
 </RelativeLayout>

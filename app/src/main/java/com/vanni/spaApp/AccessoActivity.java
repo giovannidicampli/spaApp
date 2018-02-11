@@ -30,9 +30,9 @@ public class AccessoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accesso);
 
-        editTextUsername = (EditText) findViewById(R.id.editTextUsernameAccesso);
-        editTextPassword = (EditText) findViewById(R.id.editTextPasswordAccesso);
-        buttonAccesso = (Button) findViewById(R.id.buttonAccesso);
+        editTextUsername = findViewById(R.id.editTextUsernameAccesso);
+        editTextPassword = findViewById(R.id.editTextPasswordAccesso);
+        buttonAccesso = findViewById(R.id.buttonAccesso);
 
         buttonAccesso.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +60,6 @@ public class AccessoActivity extends AppCompatActivity {
             public void onResponse(Call<ResultAccesso> call, Response<ResultAccesso> response) {
                 Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
                 if (response.body().getResult() == true) {
-                    resetField();
 
                     Intent main = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(main);
@@ -75,11 +74,5 @@ public class AccessoActivity extends AppCompatActivity {
         });
     }
 
-    private void resetField() {
-        editTextUsername.setText(null);
-        editTextPassword.setText(null);
-
-        username = null;
-        password = null;
-    }
 }
+

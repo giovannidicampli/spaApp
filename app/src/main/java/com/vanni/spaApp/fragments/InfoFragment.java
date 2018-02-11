@@ -21,6 +21,12 @@ public class InfoFragment extends Fragment {
     TextView textViewTelefono, textViewEmail;
     String numeroTelefono, email;
 
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_info, container, false);
+    }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -47,21 +53,5 @@ public class InfoFragment extends Fragment {
                 }
             }
         });
-
-
-        /*textViewOra.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent ora = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + ora));
-                startActivity(ora);
-            }
-        });*/
-
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_info, container, false);
     }
 }

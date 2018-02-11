@@ -26,10 +26,14 @@ import static com.vanni.spaApp.api.APIUrl.BASE_URL;
 public class OffertaFragment extends Fragment {
 
     TextView textViewNome, textViewDataInizio, textViewDataFine, textViewDescrizione, textViewPrezzo;
-
-
     SwipeRefreshLayout swipeOfferta;
     String nome;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_offerta, container, false);
+    }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
@@ -41,7 +45,7 @@ public class OffertaFragment extends Fragment {
         textViewDataInizio = getView().findViewById(R.id.textViewDataInizio);
         textViewDataFine = getView().findViewById(R.id.textViewDataFine);
         textViewDescrizione = getView().findViewById(R.id.textViewDescrizione);
-        textViewPrezzo = getView().findViewById(R.id.textViewPrezzo);
+        textViewPrezzo = getView().findViewById(R.id.textViewPrezzo );
 
         loadOfferta();
 
@@ -95,7 +99,8 @@ public class OffertaFragment extends Fragment {
                 textViewDataInizio.setText(offerta.getDataInizio());
                 textViewDataFine.setText(offerta.getDataFine());
                 textViewDescrizione.setText(offerta.getDescrizione());
-                textViewPrezzo.setText(offerta.getPrezzo());
+                String euro = "€";
+                textViewPrezzo.setText(offerta.getPrezzo() + euro);
             }
 
             @Override
@@ -106,11 +111,6 @@ public class OffertaFragment extends Fragment {
     }
 
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_offerta, container, false);
-    }
 
     public void setNome(String nome) {
         this.nome = nome;

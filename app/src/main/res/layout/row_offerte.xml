@@ -21,9 +21,9 @@
                 android:id="@+id/imageLogo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewNomeOfferta"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="98dp"
+                android:layout_marginBottom="43dp"
                 app:srcCompat="@drawable/logo" />
 
             <TextView

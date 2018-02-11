@@ -31,9 +31,7 @@ public class ResultAccesso {
         this.message = message;
     }
 
-    public Boolean getRegistrazione() {
-        return registrazione;
-    }
+    public Boolean getRegistrazione() { return registrazione; }
 
     public void setRegistrazione(Boolean registrazione) {
         this.registrazione = registrazione;

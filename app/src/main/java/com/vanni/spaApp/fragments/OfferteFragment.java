@@ -33,6 +33,12 @@ public class OfferteFragment extends Fragment {
     private RecyclerView.Adapter adapter;
     SwipeRefreshLayout swipeOfferte;
 
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_offerte, container, false);
+    }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -94,11 +100,5 @@ public class OfferteFragment extends Fragment {
 
             }
         });
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_offerte, container, false);
     }
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Villa Salus App</string>
+    <string name="app_name">VillaSalus</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,7 +9,7 @@
     <string name="dataInizio">Data Inizio</string>
     <string name="dataFine">Data Fine</string>
     <string name="descrizione">Descrizione</string>
-    <string name="prezzo">Prezzo</string>
+    <string name="prezzo">Prezzo €</string>
 
     <!--REGISTRAZIONE/ACCESSO-->
     <string name="nomeUtente">Nome</string>
@@ -23,7 +23,7 @@
 
     <!--CONTROLLI REGISTRAZIONE-->
     <string name="emailError">Inserisci email valida</string>
-    <string name="passwordError">Inserisci almeno 8 caratteri, 1 maiuscola, 1 minuscola e 1 giorno</string>
+    <string name="passwordError">Inserisci almeno 8 caratteri, 1 maiuscola, 1 minuscola e 1 numero</string>
     <string name="emptyError">Campo obbligatorio</string>
     <string name="passwordsDiverseError">Password e conferma password non coincidenti</string>
 

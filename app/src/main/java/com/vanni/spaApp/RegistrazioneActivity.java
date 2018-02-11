@@ -45,6 +45,8 @@ public class RegistrazioneActivity extends AppCompatActivity {
         editTextConfermaPassword = (EditText) findViewById(R.id.editTextConfermaPassword);
         buttonRegistrazione = (Button) findViewById(R.id.buttonRegistrazione);
 
+        //***Libreria che serve per controllare che tutti i campi rispettino delle regole***
+
         regularExpressionValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
         regularExpressionPassword = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$";
@@ -85,21 +87,6 @@ public class RegistrazioneActivity extends AppCompatActivity {
         return true;
     }
 
-    private void resetField() {
-        editTextNome.setText(null);
-        editTextCognome.setText(null);
-        editTextUsername.setText(null);
-        editTextEmail.setText(null);
-        editTextPassword.setText(null);
-        editTextConfermaPassword.setText(null);
-
-        nome = null;
-        cognome = null;
-        username = null;
-        email = null;
-        password = null;
-        confermaPassword = null;
-    }
 
     private void loadRegistrazioneUtente() {
         nome = editTextNome.getText().toString();
@@ -129,7 +116,6 @@ public class RegistrazioneActivity extends AppCompatActivity {
             public void onResponse(Call<ResultRegistrazione> call, Response<ResultRegistrazione> response) {
                 Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
                 if (response.body().getResult() == true) {
-                    resetField();
 
                     Intent main = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(main);

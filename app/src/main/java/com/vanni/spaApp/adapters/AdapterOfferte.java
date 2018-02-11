@@ -22,6 +22,7 @@ public class AdapterOfferte extends RecyclerView.Adapter<AdapterOfferte.ViewHold
     private List<Offerta> listaOfferta;
     private Context context;
 
+    //Creato dal fragment
     public AdapterOfferte(List<Offerta> listaOfferta, Context context) {
         this.listaOfferta = listaOfferta;
         this.context = context;
@@ -42,7 +43,6 @@ public class AdapterOfferte extends RecyclerView.Adapter<AdapterOfferte.ViewHold
         holder.textViewdataInizio.setText(offerte.getDataInizio());
         holder.textViewdataFine.setText(offerte.getDataFine());
         holder.textViewPrezzo.setText(offerte.getPrezzo());
-
 
 
     }
@@ -66,9 +66,9 @@ public class AdapterOfferte extends RecyclerView.Adapter<AdapterOfferte.ViewHold
             textViewdataFine = itemView.findViewById(R.id.textViewDataFine);
             textViewPrezzo = itemView.findViewById(R.id.textViewPrezzo);
 
-
             cardViewOfferte = itemView.findViewById(R.id.cardViewOfferte);
 
+            //Creo un generico OffertaFragment relativo all'offerta su cui "tappo"
             cardViewOfferte.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
