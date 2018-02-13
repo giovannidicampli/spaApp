@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/textViewPrezzo"
             android:layout_alignStart="@+id/textViewDescrizioneText"
-            android:text="@string/prezzo" />
+            android:text="@string/prezzoNoE" />
 
     </RelativeLayout>
 

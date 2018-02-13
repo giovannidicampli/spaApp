@@ -10,6 +10,7 @@
     <string name="dataFine">Data Fine</string>
     <string name="descrizione">Descrizione</string>
     <string name="prezzo">Prezzo €</string>
+    <string name="prezzoNoE">Prezzo</string>
 
     <!--REGISTRAZIONE/ACCESSO-->
     <string name="nomeUtente">Nome</string>

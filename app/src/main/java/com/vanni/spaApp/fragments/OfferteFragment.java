@@ -91,6 +91,7 @@ public class OfferteFragment extends Fragment {
 
                 ArrayList<Offerta> offerta = response.body().getOfferte();
 
+                //Creo l'adpter e gli passo la lista che mi ritorna il server e il context
                 adapter = new AdapterOfferte(offerta, getContext());
                 recyclerViewOfferte.setAdapter(adapter);
             }
